@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Map the Sainsbury Centre</title>
+<style>
+  #scva{
+    height: 30cm;
+    width: 111cm;
+    background: url(1cm.png);
+    border: 2.5cm solid #999;
+    border-left: 5cm solid #999;
+    border-right: 5cm solid #999;
+  }
+  #scva div{
+    background: #999;
+    opacity: .5;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  #scva div:hover{
+      background: #333;
+  }
+  #eastend{
+    height: 30cm;
+    width: 10cm; /*guessing*/
+
+  }
+  #conservatory{
+    height: 30cm;
+    width: 10cm; /*guessing*/
+  
+  }
+  #livingarea{
+    height: 30cm;
+    width: 30cm;
+  }
+  #lobby{}
+  #library{
+    height: 15cm;
+    width: 10cm;
+    display: block !important;
+    }
+  #securitydesk{
+    height: 15cm;
+    width: 10cm;
+    display: block !important;
+  }
+  .area:hover{
+
+  }
+  
+</style>
+</head>
+
+<body>
+<div id="scva">
+  <div id="eastend"></div>
+  <div id="conservatory"></div>
+  <div id="livingarea"></div>
+  <div id="lobby">
+    <div id="library"></div>
+    <div id="securitydesk"></div>
+  </div>
+</div>
+
+
+<img src="profile-flipped.png" alt="" width="4096" height="" usemap="#Map"/>
+<map name="Map">
+  <area shape="rect" coords="1158,453,1312,562" href="#" alt="The Garden Restaurant">
+  <area shape="rect" coords="1313,455,1509,512" href="#" alt="Mezannine">
+  <area shape="rect" coords="1511,457,1719,567" href="#" alt="School of World Art and Museology">
+  <area shape="rect" coords="1719,458,1917,513" href="#" alt="Post-graduate mezannine">
+  <area shape="rect" coords="1719,513,1916,563" href="#" alt="Sainsbury Research Unit Library">
+  <area shape="rect" coords="2682,458,2886,562" href="#" alt="East End Gallery">
+  <area shape="rect" coords="1916,458,2584,561" href="#" alt="Living Area ">
+</map>
+</body>
+</html>
