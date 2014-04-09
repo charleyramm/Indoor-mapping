@@ -11,12 +11,14 @@
     border: 2.5cm solid #999;
     border-left: 5cm solid #999;
     border-right: 5cm solid #999;
+    font-size: 0;
   }
   #scva div{
     background: #999;
     opacity: .5;
     display: inline-block;
     box-sizing: border-box;
+    margin: 2px;
   }
   
   #scva div:hover{
@@ -36,7 +38,7 @@
     height: 30cm;
     width: 30cm;
   }
-  #lobby{}
+  #mezannine{}
   #library{
     height: 15cm;
     width: 10cm;
@@ -47,22 +49,37 @@
     width: 10cm;
     display: block !important;
   }
-  .area:hover{
-
+  #wam{
+    height: 30cm;
+    width: 20cm;
   }
+  #exhibitionmezannine{
+    height: 30cm;
+    width: 15cm;
+  }
+  #modernlifecafe{
+    height: 30cm;
+    width: 15cm;
+  }
+  
+  
   
 </style>
 </head>
 
 <body>
 <div id="scva">
-  <div id="eastend"></div>
-  <div id="conservatory"></div>
-  <div id="livingarea"></div>
-  <div id="lobby">
-    <div id="library"></div>
-    <div id="securitydesk"></div>
-  </div>
+  <div id="eastend" title="East End"></div>
+  <div id="conservatory" title="Conservatory, gallery reception, cafe"></div>
+  <div id="livingarea" title="livingarea"></div>
+
+  <div id="mezannine" title="Post-graduate mezannine">
+    <div id="library" title="library"></div>
+    <div id="securitydesk" title="security desk"></div>
+  </div>  
+  <div id="wam" title="School of World Art and Museology"></div>
+  <div id="exhibitionmezannine" title="Exhibition mezannine"></div>
+  <div id="modernlifecafe" title="Modern Life Cafe"></div>
 </div>
 
 
