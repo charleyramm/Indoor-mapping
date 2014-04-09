@@ -4,62 +4,75 @@
 <meta charset="UTF-8">
 <title>Map the Sainsbury Centre</title>
 <style>
+  
+  html,body{
+    margin: 0;
+
+  }
+  
   #scva{
-    height: 30cm;
-    width: 111cm;
-    background: url(1cm.png);
-    border: 2.5cm solid #999;
-    border-left: 5cm solid #999;
-    border-right: 5cm solid #999;
-    font-size: 0;
+    background-color:#999;
+    background-image: linear-gradient(white 1px, transparent 2px),  
+    linear-gradient(90deg, white 1px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    
+    background-size:66px 37px, 66px 66px, 66px 66px, 66px 66px;
+   
+    
+    height: 35cm; /*35m, the width of the living area plus 2.5m service areas on each side. */
+    width: 111cm; /* gmaps: 73 units * 1.5m */
+    border: 2.5cm solid transparent; /*fosters photography. the eleveation is divided in to 12 sections of glazing which are equal to the width of the service areas on the sides and top of the building */
+    border-left: 4.5cm  solid transparent; /*gmaps: 3 modules*/
+    border-right: 4.5cm solid transparent;
+    font-size: 0; /*ignore whitespace*/
+    box-sizing: border-box; /*include margin and padding in the width of elements, rather than adding it to the total dimensions */
   }
   #scva div{
-    background: #999;
+    background: #333;
     opacity: .5;
     display: inline-block;
-    box-sizing: border-box;
-    margin: 2px;
   }
   
   #scva div:hover{
-      background: #333;
+      background: #999;
   }
   #eastend{
     height: 30cm;
-    width: 10cm; /*guessing*/
+    width: 12cm; /* google maps, 8 modules*/
 
   }
   #conservatory{
-    height: 30cm;
-    width: 10cm; /*guessing*/
+    height: 30cm; /*actually 35m, needs remodelling*/
+    width: 10.5cm; /*google maps, 7 modules*/
   
   }
   #livingarea{
     height: 30cm;
-    width: 30cm;
+    width: 36cm; /*gmaps: 24units * 1.5m */
   }
   #mezannine{}
   #library{
-    height: 15cm;
-    width: 10cm;
+    height: 15cm; /*guessing*/
+    width: 12cm; /*gmaps: 8units*/
     display: block !important;
     }
   #securitydesk{
-    height: 15cm;
-    width: 10cm;
+    height: 15cm; /*guessing*/
+    width: 12cm; /*gmaps: 8units*/
     display: block !important;
   }
   #wam{
-    height: 30cm;
-    width: 20cm;
+    height: 30cm; /*really 35, it occupies the service areas*/
+    width: 10.5cm; /*gmaps: 7units * 1.5m */
   }
   #exhibitionmezannine{
     height: 30cm;
-    width: 15cm;
+    width: 10.5cm;
   }
   #modernlifecafe{
     height: 30cm;
-    width: 15cm;
+    width: 10.5cm;
   }
   
   
@@ -68,14 +81,15 @@
 </head>
 
 <body>
+
 <div id="scva">
   <div id="eastend" title="East End"></div>
   <div id="conservatory" title="Conservatory, gallery reception, cafe"></div>
-  <div id="livingarea" title="livingarea"></div>
+  <div id="livingarea" title="Living Area"></div>
 
   <div id="mezannine" title="Post-graduate mezannine">
-    <div id="library" title="library"></div>
-    <div id="securitydesk" title="security desk"></div>
+    <div id="library" title="SRU library"></div>
+    <div id="securitydesk" title="Security desk"></div>
   </div>  
   <div id="wam" title="School of World Art and Museology"></div>
   <div id="exhibitionmezannine" title="Exhibition mezannine"></div>
